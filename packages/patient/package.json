@@ -1,0 +1,14 @@
+{
+  "name": "@cui/patient",
+  "version": "1.0.0",
+  "description": "patient ",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "cuishunbiao",
+  "license": "ISC",
+  "dependencies": {
+    "@cui/basic": "workspace:^1.0.0"
+  }
+}
