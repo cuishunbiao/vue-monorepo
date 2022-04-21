@@ -8,7 +8,7 @@
 		"preview": "vite preview",
 		"changeset": "packages/cli/bin.js",
 		"version-packages": "changeset version",
-		"release": "changeset publish --access=public"
+		"release": "changeset publish"
 	},
 	"dependencies": {
 		"element-plus": "^2.1.10",

@@ -1,12 +1,11 @@
 {
 	"name": "@cui/patient",
 	"version": "1.0.0",
-	"description": "patient ",
+	"description": "patient demo",
 	"main": "index.ts",
 	"scripts": {
 		"test": "test"
 	},
-	"author": "cuishunbiao@qq.com",
 	"license": "ISC",
 	"dependencies": {
 		"@cui/basic": "workspace:^1.0.0"
