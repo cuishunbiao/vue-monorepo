@@ -1,6 +1,7 @@
 {
 	"name": "@cui/basic",
-	"version": "2.0.0",
+	"version": "1.0.0",
+	"private": false,
 	"description": "basic demo",
 	"main": "index.ts",
 	"scripts": {

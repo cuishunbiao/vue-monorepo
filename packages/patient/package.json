@@ -1,6 +1,7 @@
 {
 	"name": "@cui/patient",
-	"version": "2.0.0",
+	"private": false,
+	"version": "1.0.0",
 	"description": "patient demo",
 	"main": "index.ts",
 	"scripts": {
