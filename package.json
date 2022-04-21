@@ -5,7 +5,10 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vue-tsc --noEmit && vite build",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"changeset": "packages/cli/bin.js",
+		"version-packages": "changeset version",
+		"release": "changeset publish"
 	},
 	"dependencies": {
 		"element-plus": "^2.1.10",
