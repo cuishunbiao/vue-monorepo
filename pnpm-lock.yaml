@@ -21,9 +21,12 @@ importers:
       vite: 2.9.5
       vue-tsc: 0.34.7_typescript@4.6.3
 
+  packages/basic:
+    specifiers: {}
+
   packages/patient:
     specifiers:
-      '@cui/basic': workspace:^1.0.0
+      '@cui/basic': workspace:^2.0.0
     dependencies:
       '@cui/basic': link:../basic
 
