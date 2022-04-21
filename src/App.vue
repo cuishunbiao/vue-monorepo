@@ -12,8 +12,8 @@ import { ref, reactive, watch, onMounted } from 'vue'
 
 const basicRef = ref<InstanceType<typeof Basic>>()
 const basicData = reactive({
-	name: 'name',
-	age: 30
+	name: '',
+	age: null
 })
 const getBasicDataFn = () => {
 	console.log(basicRef.value && basicRef.value?.result)

@@ -13,7 +13,7 @@ const props = defineProps({
 		required: true
 	},
 	age: {
-		type: Number
+		type: Number || null
 	}
 })
 //把数据变成响应式数据
