@@ -1,23 +1,21 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from './components/HelloWorld.vue'
-import Basic from './../packages/basic/basic.vue'
-</script>
-
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <Basic />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+	<p>Basic:</p>
+	<div>
+		<Basic ref="basicRef" :name="basicData.name" :age="basicData.age" />
+	</div>
+	<br />
+	<button @click="getBasicDataFn">获取值</button>
 </template>
+<script setup lang="ts">
+import Basic from './../packages/basic/basic.vue'
+import { ref, reactive, watch, onMounted } from 'vue'
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+const basicRef = ref<InstanceType<typeof Basic>>()
+const basicData = reactive({
+	name: 'name',
+	age: 30
+})
+const getBasicDataFn = () => {
+	console.log(basicRef.value && basicRef.value?.result)
 }
-</style>
+</script>
